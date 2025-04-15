@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <title>CAD Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Coronary Artery Disease Prediction-RNN</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept=".csv" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

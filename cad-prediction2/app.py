@@ -86,9 +86,9 @@ def predict():
 
         return jsonify({
             'success': 'Prediction complete!',
-            'accuracy': f"{accuracy * 100:.2f}%",
-            'auc_roc': f"{roc_auc * 100:.2f}%",
-            'f1_score': f"{f1 * 100:.2f}%",
+            'accuracy': f"{accuracy * 100:.4f}%",
+            'auc_roc': f"{roc_auc * 100:.4f}%",
+            'f1_score': f"{f1 * 100:.4f}%",
     
         })
 
